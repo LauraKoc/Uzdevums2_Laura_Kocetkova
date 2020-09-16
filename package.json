@@ -1,0 +1,15 @@
+{
+  "name": "uzdevums2_laura_kocetkova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watcher": "sass --watch resource/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}

@@ -1,0 +1,46 @@
+@import "../scss/variables.scss";
+@import "../scss/components/fonts";
+@import "../scss/components/header";
+@import "../scss/components/banner";
+@import "../scss/components/text-block";
+@import "../scss/components/gallery";
+@import "../scss/components/offers";
+@import "../scss/components/form";
+@import "../scss/components/sponsored";
+@import "../scss/components/footer";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:active {
+  background-color: #ff8a02;
+}
+.btn:hover {
+  background-color: #ffda17;
+}

@@ -1,0 +1,89 @@
+.form-wrap {
+  font-family: Oswald-Medium, sans-serif;
+  color: $textBlock;
+  margin-bottom: 150px;
+
+  .title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  form {
+    font-family: Montserrat-Regular, sans-serif;
+    color: $textBlock;
+    max-width: 612px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .input-field {
+      font-family: Montserrat-Regular, sans-serif;
+      color: $textBlock;
+      padding: 12px 13px 10px 12px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      outline: none;
+      border: 1px solid rgba(196, 196, 196, 0.4);
+      background-color: rgba(196, 196, 196, 0.4);
+    }
+
+    .input-wrap {
+      display: flex;
+      .input-field {
+        flex: 1;
+      }
+
+      .input-field:first-child {
+        margin-right: 20px;
+      }
+    }
+    textarea {
+      font-family: Montserrat-Regular, sans-serif;
+      color: $textBlock;
+      resize: none;
+    }
+
+    .agree-wrap {
+      display: flex;
+      margin-top: 25px;
+
+      small {
+        margin-left: 21px;
+      }
+    }
+
+    button {
+      margin: 0 auto;
+      background-color: #ffa800;
+      color: #ffffff;
+      border-radius: 25px;
+      border: 1px solid transparent;
+      padding: 10px 50px;
+      margin-top: 50px;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrap {
+    margin-left: 80px;
+    margin-right: 80px;
+
+    form {
+      .input-wrap {
+        display: flex;
+        flex-direction: column;
+
+        .input-field:first-child {
+          margin-right: unset;
+        }
+      }
+    }
+  }
+}

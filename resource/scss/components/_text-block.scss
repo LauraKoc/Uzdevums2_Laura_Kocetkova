@@ -1,0 +1,16 @@
+.text_block {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: $textBlock;
+    max-width: 654px;
+    text-align: center;
+    margin: 150px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .text_block  {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}

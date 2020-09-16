@@ -1,0 +1,48 @@
+.header {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    
+
+    .links-list {
+        display: flex;
+        margin: 0;
+        margin-top: 51px;
+        padding: 0;
+        .link {
+            color: $menuColor;
+            margin-right: 35px;
+            line-height: 22px;
+        }
+        .link:hover {
+            border-bottom: 3px solid #FFA800;
+        }
+    }
+    
+    .lang {
+        margin-top: 51px;
+    }
+}
+
+.header::after {
+    content: "";
+    background-image: url(../../../assets/img/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    z-index: 12;
+    height: 20%;
+}
+
+@media screen and (max-width: 1160px) {
+    body {
+        background-color: khaki;
+    }
+    .navigation {
+        display: none;
+    }
+}

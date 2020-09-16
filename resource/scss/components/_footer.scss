@@ -1,0 +1,155 @@
+.footer-wrap {
+  background-color: #2f4858;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-family: Montserrat-Regular, sans-serif;
+  font-size: 18px;
+  padding-top: 50px;
+  padding-bottom: 13px;
+  .text-mob {
+    display: none;
+  }
+
+  
+  .title {
+    margin-bottom: 22px;
+  }
+
+  .text-block {
+    font-size: 14px;
+  }
+
+  .logo-wrap {
+    max-width: 182px;
+    .text-block {
+      margin-top: 70px;
+    }
+    .title {
+      display: none;
+    }
+  }
+
+  .info {
+    margin-bottom: 10px;
+  }
+
+  .social-wrap {
+    margin-top: 52px;
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: flex-end;
+
+    .fb-icon {
+      margin-right: 21px;
+    }
+  }
+
+  .contacts {
+    text-align: end;
+  }
+
+  .privacy {
+    text-align: end;
+  }
+
+  nav {
+    .links-list .link {
+      margin-bottom: 21px;
+    }
+
+    .link:hover {
+      border-bottom: 3px solid #ffa800;
+    }
+  }
+}
+
+.footer-wrap::before {
+  content: "";
+  background-image: url(../../../assets/img/footer.svg);
+  background-size: cover;
+  height: 20%;
+  position: absolute;
+  top: -52px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1160px) {
+  .footer-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+    .contacts .title {
+      display: none;
+    }
+    .contacts {
+      margin-top: 25px;
+
+      .info-hide {
+        font-family: Montserrat-Bold, sans-serif;
+        font-weight: 600;
+      }
+    }
+
+    .text-block {
+      font-size: 16px;
+    }
+    .navigation,
+    .rekviziti {
+      display: none;
+    }
+
+    .logo-wrap {
+      max-width: 100%;
+      .text-block {
+        margin-top: 35px;
+      }
+
+      .title {
+        margin-top: 30px;
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+  .social-wrap {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-wrap {
+    flex-direction: column;
+    text-align: start;
+    .text-mob {
+      display: block;
+    }
+    .mob-hide {
+        display: none;
+    }
+    .contacts, .privacy {
+        text-align: start;
+      }
+      .privacy {
+        margin-top: 10px;
+      }
+      .social-wrap {
+
+        display: flex;
+        justify-content: flex-start;
+      }
+    
+  }
+  .footer-wrap::before {
+    content: "";
+    background-image: url(../../../assets/img/footer.svg);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    height: 20%;
+    position: absolute;
+    top: -33px;
+    left: 0;
+    width: 100%;
+  }
+}
